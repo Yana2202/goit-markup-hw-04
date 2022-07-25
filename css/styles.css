@@ -106,7 +106,15 @@ body {
 .current {
   color: var(--accent-color);
 }
-
+.phone-icon {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.main-icon {
+  fill: var(--accent-color);
+  margin-right: 10px;
+}
 .contact-link {
   font-family: var(--primary-font);
   font-weight: 500;
@@ -137,6 +145,13 @@ body {
   max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Img.jpg");
+  background-size: cover;
+  background-color: #c4c4c4;
 }
 .hero-title {
   min-width: 696px;
@@ -286,6 +301,33 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+  margin-bottom: 16px;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #2196f3;
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--primary-bg-color);
+}
+
+.social-list-icon {
+  fill: #afb1b8;
 }
 /* ====================/TEAM==================== */
 /* =============PORTFOLIO======================= */
