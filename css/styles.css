@@ -111,9 +111,10 @@ body {
   margin-right: 10px;
   vertical-align: middle;
 }
-.main-icon {
+.mail-icon {
   fill: var(--accent-color);
   margin-right: 10px;
+  vertical-align: middle;
 }
 .contact-link {
   font-family: var(--primary-font);
@@ -207,6 +208,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--tertiary-font);
+  margin-bottom: 10px;
 }
 .features-list {
   display: flex;
