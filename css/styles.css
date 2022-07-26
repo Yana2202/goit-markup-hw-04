@@ -183,13 +183,13 @@ body {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
   border-radius: 4px;
-  border: #2196f3;
+  border: var(--accent-color);
   display: block;
   margin: auto;
 }
 .hero-button:hover {
   background-color: #188ce8;
-  color: #ffffff;
+  color: var(--primary-bg-color);
 }
 
 /* ==================/HERO================= */
@@ -225,6 +225,21 @@ body {
 
   color: var(--primary-text-color);
 }
+.photo-features-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.photo-features-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
 /* ===================/FEATURES================= */
 /* ================ACTIVITY================= */
 .activity {
@@ -254,7 +269,7 @@ body {
   background-color: #f5f4fa;
 }
 .team-item {
-  background-color: #ffffff;
+  background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -317,11 +332,11 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: var(--primary-bg-color);
 }
 .social-list-link:hover,
 .social-list-link:focus {
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
@@ -332,6 +347,47 @@ body {
   fill: #afb1b8;
 }
 /* ====================/TEAM==================== */
+/* ====================CUSTOMERS==================== */
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.customers-title {
+  margin-bottom: 50px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--tertiary-font);
+}
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.customers-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+}
+/* .customers-link:hover,
+.customers-link:focus {
+  color: #2196f3;
+}
+.customers-icon:hover {
+  fill: #757575;
+} */
+
+/* ================/CUSTOMERS==================== */
 /* =============PORTFOLIO======================= */
 .button-list {
   display: flex;
@@ -347,7 +403,7 @@ body {
   padding-top: 6px;
   padding-bottom: 6px;
   border-radius: 4px;
-  border: #2196f3;
+  border: var(--accent-color);
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -362,11 +418,11 @@ body {
 .button:hover,
 .button:focus {
   color: var(--primary-bg-color);
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 button.current {
-  color: #ffffff;
-  background: #2196f3;
+  color: var(--primary-bg-color);
+  background: var(--accent-color);
 }
 .work-list {
   display: flex;
