@@ -111,8 +111,9 @@ body {
   margin-right: 10px;
   vertical-align: middle;
 }
+
 .mail-icon {
-  fill: var(--accent-color);
+  fill: var(--primary-text-color);
   margin-right: 10px;
   vertical-align: middle;
 }
@@ -133,6 +134,7 @@ body {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
+  stroke: var(--accent-color);
 }
 .contact-list {
   display: flex;
@@ -225,20 +227,16 @@ body {
 
   color: var(--primary-text-color);
 }
-.photo-features-list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 30px;
-}
-.photo-features-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
+.wrapper:not(:last-child) {
   height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   border-radius: 4px;
   background-color: #f5f4fa;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 /* ===================/FEATURES================= */
 /* ================ACTIVITY================= */
@@ -450,6 +448,10 @@ button.current {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
+}
+.work-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .work-text {
   font-family: "Roboto";
